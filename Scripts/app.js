@@ -10,7 +10,7 @@
         AboutUsButton.addEventListener("click", function()
         {
             // redirect to about page
-            location.href = "about.html";
+            location.href = "aboutus.html";
         });
 
         // Step 1 get a reference to an entry point(s) (insertion point / deletion point)
@@ -28,7 +28,7 @@
 
         let FirstParagraphString = "This is";
         // example of Template String
-        let SecondParagraphString =  `${FirstParagraphString} The Main Paragraph`;
+        let SecondParagraphString = `${FirstParagraphString} the Main Paragraph`;
 
         MainParagraph.textContent = SecondParagraphString;
         Article.setAttribute("class", "container");
@@ -38,14 +38,16 @@
         Article.innerHTML = ArticleParagraph;
         DocumentBody.appendChild(Article);
 
+
         // Deletion example
         //document.getElementById("ArticleParagraph").remove();
 
         // Insert Before example
         // let NewH1 = document.createElement("h1");
         // NewH1.setAttribute("class", "display-1");
-        // MainContent.before(NewH1)
         // NewH1.textContent = "Hello, World!";
+        // MainContent.before(NewH1);
+
     }
 
     // named function
