@@ -1,6 +1,6 @@
 class Contact
 {
-    // public properties (getters and setters)
+    // public properties (getters / setters)
     get FullName()
     {
         return this.m_fullName;
@@ -32,9 +32,9 @@ class Contact
     }
 
     // constructor
-    constructor(fullName = "", contactNumber = "", emailAddress = "") // default parameters
+    constructor(fullName = "", contactNumber = "", emailAddress = "") // default string parameter
     {
-        this.FullName = fullName;
+        this.FullName =fullName;
         this.ContactNumber = contactNumber;
         this.EmailAddress = emailAddress;
     }
@@ -46,14 +46,11 @@ class Contact
         {
             return `${this.FullName},${this.ContactNumber},${this.EmailAddress}`;
         }
-        else
-        {
-            console.error("One or more properties of the Contact are missing or empty");
-            return null;
-        }
+        console.error("One or more properties of the Contact Object are missing or empty");
+        return null;
     }
 
-    deserialize(data) // assume that data is a comma-separated list of properties (strings)
+    deserialize(data) // assume that the data object is a comma-separated list of properties
     {
         let propertyArray = data.split(",");
         this.FullName = propertyArray[0];
@@ -61,8 +58,7 @@ class Contact
         this.EmailAddress = propertyArray[2];
     }
 
-
-    // public overrides
+    // overridden methods
     toString()
     {
         return `Full Name     : ${this.FullName}\nContact Number: ${this.ContactNumber}\nEmail Address : ${this.EmailAddress}`;

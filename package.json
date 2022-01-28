@@ -1,7 +1,7 @@
 {
-  "name": "webd6201-w2022-ice3",
+  "name": "ICE-3",
   "version": "1.0.0",
-  "description": "demo project for ice3",
+  "description": "ICE 3 for WEBD6201 in the Winter 2022 Semester",
   "main": "index.js",
   "author": "Aadithkeshev",
   "license": "MIT",
