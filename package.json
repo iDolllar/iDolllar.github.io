@@ -1,9 +1,9 @@
 {
-  "name": "ICE-1",
+  "name": "webd6201-w2022-ice3",
   "version": "1.0.0",
-  "description": "ICE 1 for WEBD6201 in the Winter 2022 Semester",
+  "description": "demo project for ice3",
   "main": "index.js",
-  "author": "Aadithkeshev Anushayamunaithuraivan",
+  "author": "Aadithkeshev",
   "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
