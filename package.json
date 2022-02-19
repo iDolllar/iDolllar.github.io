@@ -1,7 +1,7 @@
 {
-  "name": "ICE-4",
+  "name": "ICE-5",
   "version": "1.0.0",
-  "description": "ICE 4 for WEBD6201 in the Winter 2022 Semester",
+  "description": "ICE 6 for WEBD6201 in the Winter 2022 Semester",
   "main": "index.js",
   "author": "Aadithkeshev Anushayamunaithuraivan",
   "license": "MIT",
@@ -10,5 +10,8 @@
     "@popperjs/core": "^2.11.2",
     "bootstrap": "^5.1.3",
     "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.13"
   }
 }
